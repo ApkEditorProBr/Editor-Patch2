@@ -141,10 +141,10 @@ p {
 
 /* Estilização do botão de upload */
 #uploadButton {
-  right: 230px;
+  right: 69px;
   font-size: 10px;
   position: fixed;
-  top: 17;
+  top: 17px;
   padding: 5px 10px;
   color: white;
   background-color: #111;
@@ -154,10 +154,10 @@ p {
 }
 
 #downloadButton {
-  right: 293px;
+  right: 15px;
   font-size: 10px;
   position: fixed;
-  top: 17;
+  top: 17px;
   padding: 5px 10px;
   color: white;
   background-color: #111;
