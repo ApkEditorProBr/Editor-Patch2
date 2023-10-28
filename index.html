@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--Bloqueio de zoom mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<!--Salvar zip-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!--Lidar com zip-->
+    <script src="MyScript.js"></script>
+    <!--Linha numérica vertical-->
+    <script src="LinhaNumericaVertical.js"></script>
+</head>
+<body>
+  <div class="fundo">
+    <!-- Barra de navegação -->
+    <div class="navbar">
+    <!--Estrutura de árvore-->
+        <span class="caret"></span>
+        <div id="zipFiles" class="nested"></div>
+    </div>
+    <div class="editor">
+      <!--Linha numérica vertical-->
+      <div id="vertical_number_line"></div>
+      <!--Caixa de texto-->
+      <textarea id="fileContent" oninput="atualizarConteudo()" onscroll="sincronizarScroll()"></textarea>
+    </div>
+</body>
+</html>
