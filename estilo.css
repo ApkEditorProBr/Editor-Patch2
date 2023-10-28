@@ -143,7 +143,7 @@ p {
 #uploadButton {
   right: 69px;
   font-size: 10px;
-  position: fixed;
+  position: relevante;
   top: 17px;
   padding: 5px 10px;
   color: white;
@@ -156,7 +156,7 @@ p {
 #downloadButton {
   right: 15px;
   font-size: 10px;
-  position: fixed;
+  position: relevante;
   top: 17px;
   padding: 5px 10px;
   color: white;
