@@ -141,7 +141,7 @@ p {
 
 /* Estilização do botão de upload */
 #uploadButton {
-  float: left;
+  right: 230px;
   font-size: 10px;
   position: fixed;
   top: 17;
@@ -154,8 +154,8 @@ p {
 }
 
 #downloadButton {
+  right: 293px;
   font-size: 10px;
-  float: left;
   position: fixed;
   top: 17;
   padding: 5px 10px;
