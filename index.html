@@ -5,7 +5,14 @@
 <!--Bloqueio de zoom mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="estilo.css">
-  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+<!--Salvar zip-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <!--Lidar com zip-->
+    <script src="MyScript.js"></script>
+    <!--Linha numérica vertical-->
+    <script src="LinhaNumericaVertical.js"></script>
+</head>
 <body>
   <div class="fundo">
     <!-- Barra de navegação -->
@@ -20,12 +27,5 @@
       <!--Caixa de texto-->
       <textarea id="fileContent" oninput="atualizarConteudo()" onscroll="sincronizarScroll()"></textarea>
     </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-<!--Salvar zip-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <!--Lidar com zip-->
-    <script src="MyScript.js"></script>
-    <!--Linha numérica vertical-->
-    <script src="LinhaNumericaVertical.js"></script>
 </body>
 </html>
