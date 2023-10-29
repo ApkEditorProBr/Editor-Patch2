@@ -1,5 +1,13 @@
-//Bloqueio de extensões
 const blockedExtensions = ['xlsx', 'docx', 'pptx', 'pdf', 'jpeg', 'jpg', 'png', 'gif', 'mp3', 'mp4', 'zip', 'ttf', 'exe', 'csv', 'psd', 'ai', 'svg', 'rar', 'mov', 'avi'];
+
+function handleUploadButtonClick() {
+  document.getElementById('zipFileInput').click();
+}
+
+function handleZipFileSelect(event) {
+  const file = event.target.files[0];
+  displayZipFiles(file);
+}
 
 function displayZipFiles(file) {
   const reader = new FileReader();
@@ -84,18 +92,13 @@ function displayZipFiles(file) {
   reader.readAsArrayBuffer(file);
 }
 
-function handleZipFileSelect(event) {
-  const file = event.target.files[0];
-  displayZipFiles(file);
-}
-
 function downloadZipFile() {
   const zip = new JSZip();
   const ul = document.getElementById('zipFiles');
   const lis = ul.getElementsByTagName('li');
 
   // Prompt for entering the name
-  const promptName = prompt('Escolha um nome para seu patch:', 'Patch_Gerado');
+  const promptName = prompt('Escolha um nome para seu patch:', 'PatchGerado');
 
   for (let i = 0; i < lis.length; i++) {
     const nestedUl = lis[i].getElementsByTagName('ul')[0];
@@ -116,29 +119,3 @@ function downloadZipFile() {
     saveAs(content, `${promptName}.zip`);
   });
 }
-
-const navbar = document.querySelector('.navbar');
-
-const uploadButton = document.createElement('button');
-uploadButton.id = 'uploadButton';
-uploadButton.textContent = 'Carregar';
-uploadButton.addEventListener('click', function () {
-  document.getElementById('zipFileInput').click();
-});
-
-const zipFileInput = document.createElement('input');
-zipFileInput.id = 'zipFileInput';
-zipFileInput.type = 'file';
-zipFileInput.style.display = 'none';
-zipFileInput.addEventListener('change', handleZipFileSelect);
-
-const downloadButton = document.createElement('button');
-downloadButton.id = 'downloadButton';
-downloadButton.textContent = 'Baixar';
-downloadButton.addEventListener('click', function () {
-  downloadZipFile();
-});
-
-navbar.appendChild(uploadButton);
-navbar.appendChild(zipFileInput);
-navbar.appendChild(downloadButton);
