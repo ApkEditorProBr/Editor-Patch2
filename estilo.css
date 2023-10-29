@@ -139,28 +139,27 @@ p {
 	color: black;
 }
 
-/* Estilização do botão de upload */
 #uploadButton {
-  right: 230px;
-  font-size: 10px;
-  position: relevante;
-  top: 17px;
+  left: 210px;
+  position: absolute;
+  margin-top: -2px;
   padding: 5px 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #111;
+  box-shadow: 0 0 4px #666;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #downloadButton {
-  right: 293;
-  font-size: 10px;
-  position: relevante;
-  top: 17px;
+  left: 288px;
+  position: absolute;
+  margin-top: -2px;
   padding: 5px 10px;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #111;
+  box-shadow: 0 0 4px #666;
   border: none;
   border-radius: 5px;
   cursor: pointer;
