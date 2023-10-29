@@ -15,8 +15,13 @@
 </head>
 <body>
   <div class="fundo">
+  
     <!-- Barra de navegação -->
     <div class="navbar">
+  
+  <button id="uploadButton" onclick="handleUploadButtonClick()">Carregar</button>
+  <input id="zipFileInput" type="file" style="display: none;" onchange="handleZipFileSelect(event)">
+  <button id="downloadButton" onclick="downloadZipFile()">Baixar</button>
     <!--Estrutura de árvore-->
         <span class="caret"></span>
         <div id="zipFiles" class="nested"></div>
