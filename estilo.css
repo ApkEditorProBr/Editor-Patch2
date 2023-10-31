@@ -1,5 +1,10 @@
+/* Estilização do fundo da página */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   user-select: none;
+  height: none;
 }
 
 .fundo {
@@ -140,7 +145,7 @@ p {
 }
 
 #uploadButton {
-  left: 210px;
+  right: 78;
   position: absolute;
   margin-top: -2px;
   padding: 5px 10px;
@@ -153,7 +158,7 @@ p {
 }
 
 #downloadButton {
-  left: 288px;
+  right: 15;
   position: absolute;
   margin-top: -2px;
   padding: 5px 10px;
@@ -171,6 +176,17 @@ p {
   font-size: none;
 }
 
+.nested {
+  left: 200px;
+}
+
+#uploadButton {
+  right: 388;
+}
+#downloadButton {
+  right: 325;
+ }
+ 
 #fileContent {
   width: calc(100% - 45px);
 font-size: 15px;
