@@ -31,7 +31,7 @@ nav {
 /*Botão para salvar arquivos editados*/
 #save-btn {
   top: 18;
-  right: 73;
+  margin-right: 73px;
   position: absolute;
   padding: 4px 7px;
   background-color: #42a5f5;
@@ -48,7 +48,7 @@ nav {
 
 /*Botão para baixar o arquivo zip*/
 #download-btn {
-  right: 15;
+  margin-right: 15px;
   position: absolute;
   margin-top: 0px;
   padding: 4px 7px;
@@ -61,7 +61,7 @@ nav {
 }
 
 #icon {
-  position: absolute;
+ position: absolute;
  font-size: 20px;
  top: 15;
  margin-left: 20px;
