@@ -23,10 +23,10 @@ nav {
 
 /*Botão para carregar o arquivo zip*/
 #file-label {
-  font: italic small-caps bold 15px Georgia, serif;
+  font: italic small-caps bold 19px Georgia, serif;
   width:  none;
   top: 18;
-  left: 205px;
+  left: 185px;
   position: absolute;
   padding: 2px 5px;
   background-color: #42a5f5;
@@ -45,7 +45,7 @@ nav {
 /*Botão para salvar arquivos editados*/
 #save-btn {
   font: italic small-caps bold 15px Georgia, serif;
-  left: 150px;
+  left: 110px;
   top: 18;
   position: absolute;
   padding: 4px 7px;
