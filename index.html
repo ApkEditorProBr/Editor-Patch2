@@ -10,10 +10,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
   </head>
   <body>
+  <div class="fundo">
   <!--Barra de navegação-->
   <nav>
    <!--Carrega arquivos-->
-   <label for="upload-btn" id="file-label">Selecione o arquivo zip</label>
+   <label for="upload-btn" id="file-label">Carregar</label>
     <input type="file" id="upload-btn" accept=".zip" title="" />
     <!--Salva arquivos editados-->
     <button id="save-btn" onclick="saveContent()">Salvar</button>
@@ -32,6 +33,7 @@
       <div id="vertical_number_line"></div>
     <!--Caixa de texto-->
     <textarea id="file-content" disabled></textarea>
+    </div>
     </div>
     <!--Drawer-->
     <script>
