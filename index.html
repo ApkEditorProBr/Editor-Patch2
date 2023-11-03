@@ -13,6 +13,8 @@
   <div class="fundo">
   <!--Barra de navegação-->
   <nav>
+  <!--Icone da estrutura de árvore-->
+  <span id="icon">&#128193;</span>
    <!--Carrega arquivos-->
    <label for="upload-btn" id="file-label">Carregar</label>
     <input type="file" id="upload-btn" accept=".zip" title="" />
@@ -22,12 +24,8 @@
 <a id="download-link" style="display: none;"></a>
     <button id="download-btn" onclick="downloadZIP()" disabled>Baixar</button>
     </nav>
-    
     <!--Estrutura de árvore-->
-  <div>
-  <span id="icon">&#128193;</span>
-  <ul id="file-list">
- </div>
+  <ul id="file-list"></ul>
      <div class="editor">
       <!--Linha numérica vertical-->
       <div id="vertical_number_line"></div>
@@ -35,19 +33,6 @@
     <textarea id="file-content" oninput="atualizarConteudo()" onscroll="sincronizarScroll()"disabled></textarea>
     </div>
     </div>
-    <!--Drawer-->
-    <script>
-    var icon = document.getElementById('icon');
-    var fileList = document.getElementById('file-list');
-
-    icon.addEventListener('click', function() {
-      if (fileList.style.display === 'none') {
-        fileList.style.display = 'block';
-      } else {
-        fileList.style.display = 'none';
-      }
-    });
-  </script>
     <!--Configurar editor-->
     <script src="ConfigEditor.js"></script>
     <!--Linha numérica vertical-->
