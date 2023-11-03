@@ -25,7 +25,7 @@ nav {
 #file-label {
   width:  none;
   top: 18;
-  left: 210px;
+  left: 209px;
   position: absolute;
   padding: 2px 5px;
   background-color: #42a5f5;
@@ -43,7 +43,7 @@ nav {
 
 /*Botão para salvar arquivos editados*/
 #save-btn {
-  left: 155px;
+  left: 150px;
   top: 18;
   position: absolute;
   padding: 4px 7px;
@@ -55,7 +55,7 @@ nav {
   cursor: pointer;
 }
 
-/*Botão para baixar o arquivo zip*/
+/**/
 #download-link {
 }
 
@@ -74,9 +74,10 @@ nav {
 }
 
 #icon {
+ left: 17;
  position: absolute;
  font-size: 20px;
- top: 15;
+ top: 10;
  margin-left: 20px;
 }
 
@@ -155,4 +156,16 @@ textarea::-webkit-scrollbar-track {
 
 textarea {
 float: right;
+}
+
+@media (min-width: 768px) {
+#vertical_number_line {
+  width: none;
+  font-size: none;
+}
+
+#file-content {
+  width: calc(100% - 45px);
+font-size: 15px;
+   }
 }
