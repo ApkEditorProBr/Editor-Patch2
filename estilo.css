@@ -23,17 +23,17 @@ nav {
 
 /*Botão para carregar o arquivo zip*/
 #file-label {
-  top: 4;
-  margin-left: 55px;
-  font-size: 12px;
-  box-shadow: 0 0 4px #666;
-  padding: 0.4em 1em;
-  border: none;
+  width:  none;
+  top: 18;
+  right: 130;
+  position: absolute;
+  padding: 2px 5px;
   background-color: #42a5f5;
   color: #ffffff;
-  cursor: pointer;
-  position: relative;
+  box-shadow: 0 0 4px #666;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Estilização do input de arquivo */
