@@ -4,33 +4,51 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <!--Bloqueio de zoom mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--Meu estilo-->
   <link rel="stylesheet" href="estilo.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
-<!--Salvar zip-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <!--Lidar com zip-->
-    <script src="MyScript.js"></script>
-    <!--Linha numérica vertical-->
-    <script src="LinhaNumericaVertical.js"></script>
-</head>
-<body>
-  <div class="fundo">
-  
-    <!-- Barra de navegação -->
-    <div class="navbar">
-  
-  <button id="uploadButton" onclick="handleUploadButtonClick()">Carregar</button>
-  <input id="zipFileInput" type="file" style="display: none;" onchange="handleZipFileSelect(event)">
-  <button id="downloadButton" onclick="downloadZipFile()">Baixar</button>
+    <!--Lib para lidar com zip-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+  </head>
+  <body>
+  <!--Barra de navegação-->
+  <nav>
+   <!--Carrega arquivos-->
+   <label for="upload-btn" id="file-label">Selecione o arquivo zip</label>
+    <input type="file" id="upload-btn" accept=".zip" title="" />
+    <!--Salva arquivos editados-->
+    <button id="save-btn" onclick="saveContent()">Salvar</button>
+<!--Baixa o arquivo-->
+<a id="download-link" style="display: none;"></a>
+    <button id="download-btn" onclick="downloadZIP()" disabled>Baixar</button>
+    </nav>
+    
     <!--Estrutura de árvore-->
-        <span class="caret"></span>
-        <div id="zipFiles" class="nested"></div>
-    </div>
-    <div class="editor">
+  <div>
+  <span id="icon">&#128193;</span>
+  <ul id="file-list">
+ </div>
+     <div class="editor">
       <!--Linha numérica vertical-->
       <div id="vertical_number_line"></div>
-      <!--Caixa de texto-->
-      <textarea id="fileContent" oninput="atualizarConteudo()" onscroll="sincronizarScroll()"></textarea>
+    <!--Caixa de texto-->
+    <textarea id="file-content" disabled></textarea>
     </div>
+    <!--Drawer-->
+    <script>
+    var icon = document.getElementById('icon');
+    var fileList = document.getElementById('file-list');
+
+    icon.addEventListener('click', function() {
+      if (fileList.style.display === 'none') {
+        fileList.style.display = 'block';
+      } else {
+        fileList.style.display = 'none';
+      }
+    });
+  </script>
+    <!--Configurar editor-->
+    <script src="ConfigEditor.js"></script>
+    <!--Linha numérica vertical-->
+    <script src="LinhaNumericaVertical.js"></script>
 </body>
 </html>
