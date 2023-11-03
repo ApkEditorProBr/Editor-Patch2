@@ -140,3 +140,14 @@ function downloadZIP() {
       link.click();
     });
 }
+
+var icon = document.getElementById('icon');
+    var fileList = document.getElementById('file-list');
+
+    icon.addEventListener('click', function() {
+      if (fileList.style.display === 'none') {
+        fileList.style.display = 'block';
+      } else {
+        fileList.style.display = 'none';
+      }
+    });
