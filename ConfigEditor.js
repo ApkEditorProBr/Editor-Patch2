@@ -54,7 +54,7 @@ document
   });
 
 function addFile() {
-  let fileName = prompt("Digite o nome do arquivo:");
+  let fileName = prompt("Digite o nome do arquivo:","Gen");
   let fileContent = ""; // inicialmente vazio
   
   if (fileName) {
@@ -111,7 +111,7 @@ function addFile() {
 
 function saveContent() {
   var content = document.getElementById("file-content").value;
-  let fileName = prompt("Digite o caminho/arquivo:");
+  let fileName = prompt("Digite o caminho/arquivo:","pasta/arquivo.txt");
   
   if (fileName) {
     if (checkExtension(fileName)) {
