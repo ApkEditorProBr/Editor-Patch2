@@ -23,10 +23,10 @@ nav {
 
 /*Botão para carregar o arquivo zip*/
 #file-label {
-  font: italic small-caps bold 19px Georgia, serif;
+  font-family: normal;
   width:  none;
   top: 18;
-  left: 185px;
+  left: 210px;
   position: absolute;
   padding: 2px 5px;
   background-color: #42a5f5;
@@ -44,8 +44,8 @@ nav {
 
 /*Botão para salvar arquivos editados*/
 #save-btn {
-  font: italic small-caps bold 15px Georgia, serif;
-  left: 110px;
+  font-family: normal;
+  left: 153px;
   top: 18;
   position: absolute;
   padding: 4px 7px;
@@ -63,7 +63,7 @@ nav {
 
 /*Botão para baixar o arquivo zip*/
 #download-btn {
-  font: italic small-caps bold 15px Georgia, serif;
+  font-family: normal;
   left: 288px;
   position: absolute;
   margin-top: 0px;
@@ -103,7 +103,7 @@ nav {
   background-color: white;
   box-shadow: 0 0 4px #666;
   width: 100%;
-  height: 510px;
+  height: 500px;
   display: flex;
   border: none;
   margin: none;
