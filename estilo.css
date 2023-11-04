@@ -93,7 +93,7 @@ nav {
   left: 11;
   margin-top: 0px;
   width: 35%;
-  height: 50%;
+  height: none;
   overflow-y: scroll;
   background-color: white;
   border: 1px solid #D1D1D1;
