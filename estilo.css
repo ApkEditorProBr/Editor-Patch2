@@ -78,6 +78,7 @@ nav {
 
 #icon {
  left: 17;
+  cursor: pointer;
  position: fixed;
  font-size: 20px;
  top: 18;
@@ -85,19 +86,18 @@ nav {
 }
 
 #file-list {
-  cursor: pointer;
   display: none;
   font-size: 9px;
-  position: fixed;
+  position: absolute;
   list-style-type: none;
   left: 11;
   margin-top: 0px;
   width: 35%;
-  height: none;
+  height: 10%;
   overflow-y: scroll;
   background-color: white;
   border: 1px solid #D1D1D1;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 0px 0px;
 }
 
 #file-list li {
