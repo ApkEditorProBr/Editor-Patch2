@@ -78,7 +78,7 @@ nav {
 
 #icon {
  left: 17;
-  cursor: pointer;
+ cursor: pointer;
  position: fixed;
  font-size: 20px;
  top: 18;
@@ -101,6 +101,7 @@ nav {
 }
 
 #file-list li {
+ cursor: pointer;
   border-bottom: 1px solid #D1D1D1;
   overflow-y: auto;
   margin-left: -45px;
