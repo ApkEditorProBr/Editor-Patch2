@@ -54,7 +54,7 @@ document
   });
 
 function addFile() {
-  let fileName = prompt("Digite o nome do arquivo:","Gen");
+  let fileName = prompt("Digite o nome do arquivo:");
   let fileContent = ""; // inicialmente vazio
   
   if (fileName) {
@@ -130,7 +130,7 @@ function saveContent() {
 }
 
 function downloadZIP() {
-  var nome = prompt("Digite o nome do arquivo ZIP:");
+  var nome = prompt("Digite o nome do arquivo ZIP:", "Gen");
   
   createdZip.generateAsync({ type: "blob" })
     .then(function (content) {
