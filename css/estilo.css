@@ -1,0 +1,320 @@
+body {
+  user-select: none;
+}
+
+.fundo {
+  width: 344px;
+  border-radius: 10px;
+  height: 91%;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  width: 324px;
+  height: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 4px #666;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/*Botão para carregar o arquivo zip*/
+#file-label {
+  font-family: normal;
+  width:  none;
+  top: 18;
+  left: 210px;
+  position: absolute;
+  padding: 2px 5px;
+  background-color: #42a5f5;
+  color: #ffffff;
+  box-shadow: 0 0 4px #666;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilização do input de arquivo */
+#upload-btn {
+  display: none;
+}
+
+/*Botão para salvar arquivos editados*/
+#save-btn {
+  font-family: normal;
+  left: 153px;
+  top: 18;
+  position: absolute;
+  padding: 4px 7px;
+  background-color: #42a5f5;
+  color: #ffffff;
+  box-shadow: 0 0 4px #666;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/**/
+#download-link {
+}
+
+/*Botão para baixar o arquivo zip*/
+#download-btn {
+  font-family: normal;
+  left: 288px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 4px 7px;
+  background-color: #42a5f5;
+  color: #ffffff;
+  box-shadow: 0 0 4px #666;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#icon {
+ left: 17;
+ cursor: pointer;
+ position: fixed;
+ font-size: 20px;
+ top: 18;
+ margin-left: 20px;
+}
+
+#file-list {
+  display: none;
+  font-size: 9px;
+  position: absolute;
+  list-style-type: none;
+  left: 11;
+  margin-top: 0px;
+  width: 35%;
+  height: 10%;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#file-list li {
+ cursor: pointer;
+  border-bottom: 1px solid #D1D1D1;
+  overflow-y: auto;
+  margin-left: -45px;
+}
+
+#file-list li span {
+  margin-left: 10px;
+}
+
+.editor {
+  float: none;
+  background-color: white;
+  box-shadow: 0 0 4px #666;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  border: none;
+  margin: none;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 5px 0px;
+}
+
+#vertical_number_line {
+  background-color: white;
+  height: none;
+  padding: 3%;
+  width: none;
+  font-size: 9px;
+  color: black;
+  white-space: pre-line;
+  overflow-y: hidden;
+  margin-right: none;
+  border-right: 1px solid black;
+}
+
+#file-content {
+ outline: none;
+ caret-color: #42a5f5;
+  resize: none;
+  width: calc(100% - 45px);
+  color: black;
+  outline: none;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  font-family: normal;
+  font-size: 9px;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+  overflow-y: auto;
+  height: none;
+  overflow: scroll;
+}
+
+textarea::-webkit-scrollbar {
+  width: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 2px; 
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+textarea {
+float: right;
+}
+
+@media (min-width: 768px) {
+#vertical_number_line {
+  width: none;
+  font-size: none;
+}
+
+#file-content {
+  width: calc(100% - 45px);
+font-size: 15px;
+   }
+}
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/**/
+#download-link {
+}
+
+/*Botão para baixar o arquivo zip*/
+#download-btn {
+  font-family: normal;
+  left: 288px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 4px 7px;
+  background-color: #42a5f5;
+  color: #ffffff;
+  box-shadow: 0 0 4px #666;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#icon {
+ left: 17;
+ cursor: pointer;
+ position: fixed;
+ font-size: 20px;
+ top: 18;
+ margin-left: 20px;
+}
+
+#file-list {
+  display: none;
+  font-size: 9px;
+  position: absolute;
+  list-style-type: none;
+  left: 11;
+  margin-top: 0px;
+  width: 35%;
+  height: 10%;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#file-list li {
+ cursor: pointer;
+  border-bottom: 1px solid #D1D1D1;
+  overflow-y: auto;
+  margin-left: -45px;
+}
+
+#file-list li span {
+  margin-left: 10px;
+}
+
+.editor {
+  float: none;
+  background-color: white;
+  box-shadow: 0 0 4px #666;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  border: none;
+  margin: none;
+  padding: 0px;
+  border: none;
+  border-radius: 0px 0px 5px 0px;
+}
+
+#vertical_number_line {
+  background-color: white;
+  height: none;
+  padding: 3%;
+  width: none;
+  font-size: 9px;
+  color: black;
+  white-space: pre-line;
+  overflow-y: hidden;
+  margin-right: none;
+  border-right: 1px solid black;
+}
+
+#file-content {
+ outline: none;
+ caret-color: #42a5f5;
+  resize: none;
+  width: calc(100% - 45px);
+  color: black;
+  outline: none;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  font-family: normal;
+  font-size: 9px;
+  scrollbar-width: thin;
+  scrollbar-color: black transparent;
+  overflow-y: auto;
+  height: none;
+  overflow: scroll;
+}
+
+textarea::-webkit-scrollbar {
+  width: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 2px; 
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+textarea {
+float: right;
+}
+
+@media (min-width: 768px) {
+#vertical_number_line {
+  width: none;
+  font-size: none;
+}
+
+#file-content {
+  width: calc(100% - 45px);
+font-size: 15px;
+   }
+}
