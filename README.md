@@ -3,3 +3,5 @@
 #Autor: BruMarti
 
 Ferramenta criada para editar arquivos de correção para "apk editor pro"
+
+Page: https://apkeditorprobr.github.io/Editor-Patch2/
