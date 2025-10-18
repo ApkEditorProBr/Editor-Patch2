@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--Bloqueio de zoom mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--Meu estilo-->
+  <link rel="stylesheet" href="css/estilo.css">
+    <!--Lib para lidar com zip-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+  </head>
+  <body>
+  <div class="fundo">
+  <!--Barra de navegação-->
+  <nav>
+  <!--Icone da estrutura de árvore-->
+  <span id="icon">&#128193;</span>
+   <!--Carrega arquivos-->
+   <label for="upload-btn" id="file-label">Carregar</label>
+    <input type="file" id="upload-btn" accept=".zip" title="" />
+    <!--Salva arquivos editados-->
+    <button id="save-btn" onclick="saveContent()">Salvar</button>
+<!--Baixa o arquivo-->
+<a id="download-link" style="display: none;"></a>
+    <button id="download-btn" onclick="downloadZIP()" disabled>Baixar</button>
+    </nav>
+    <!--Estrutura de árvore-->
+  <ul id="file-list"></ul>
+     <div class="editor">
+      <!--Linha numérica vertical-->
+      <div id="vertical_number_line"></div>
+    <!--Caixa de texto-->
+    <textarea id="file-content" oninput="atualizarConteudo()" onscroll="sincronizarScroll()"disabled></textarea>
+    </div>
+    </div>
+    <!--Configurar editor-->
+    <script src="js/ConfigEditor.js"></script>
+    <!--Linha numérica vertical-->
+    <script src="js/LinhaNumericaVertical.js"></script>
+</body>
+</html>
